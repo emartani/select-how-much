@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ask the Price - Level 1</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V9DPT0NWXZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V9DPT0NWXZ');
+</script>
+
+<body>
+  <div class="question-box">
+    <h1>🧠 Level 1</h1>
+    <h2 id="question">Clique em um card para saber o valor do item.</h2>
+    <div id="response"></div>
+  </div>
+
+  <div class="price-panel">
+    <h3>🛒 Price List </h3>
+    <table>
+      <tr><td>Popcorn (Large)</td><td>$8</td></tr>
+      <tr><td>Popcorn (Medium)</td><td>$4</td></tr>
+      <tr><td>Popcorn (Small)</td><td>$3</td></tr>
+      <tr><td>Soda (Large)</td><td>$5</td></tr>
+      <tr><td>Soda (Medium)</td><td>$3</td></tr>
+      <tr><td>Soda (Small)</td><td>$2</td></tr>
+      <tr><td>Candies</td><td>$3</td></tr>
+      <tr><td>Hot Dog</td><td>$10</td></tr>
+      <tr><td>Ice Cream</td><td>$6</td></tr>
+    </table>
+  </div>
+
+  <div class="card-row" id="options"></div>
+
+  <script src="js/nivel1.js"></script>
+</body>
+</html>
