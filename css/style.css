@@ -115,12 +115,22 @@ body {
 
 /* Responsivo */
 @media (max-width: 600px) {
-  .card-row {
-    flex-direction: row;
-    overflow-x: auto;
+  #question {
+    font-size: 24px;
+    padding: 10px;
+  }
+
+  #response {
+    font-size: 20px;
+    padding: 10px;
   }
 
   .option {
-    flex: 0 0 auto;
+    width: 100px;
+    height: 120px;
+  }
+
+  .option img {
+    width: 80px;
   }
 }
