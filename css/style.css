@@ -134,3 +134,22 @@ body {
     width: 80px;
   }
 }
+
+@media (max-width: 400px) {
+  #question {
+    font-size: 22px;
+  }
+
+  #response {
+    font-size: 18px;
+  }
+
+  .option {
+    width: 90px;
+    height: 110px;
+  }
+
+  .option img {
+    width: 70px;
+  }
+}
