@@ -228,12 +228,12 @@ body {
   }
 
   .question-box {
-    padding: 6px;
-    margin-bottom: 0px;
+    padding: 3px;
+    margin-bottom: 1px;
   }
 
   .question-box h1 {
-    font-size: 22px;
+    font-size: 15px;
   }
 
   .question-box h2 {
