@@ -233,10 +233,12 @@ body {
   }
 
   .question-box h1 {
-    font-size: 15px;
+    font-size: 20px;
+    margin-bottom: 2px;
   }
 
   .question-box h2 {
     font-size: 18px;
+    margin-bottom: 2px;
   }
 }
