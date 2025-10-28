@@ -225,11 +225,11 @@ body {
   .price-panel {
     max-width: 220px;
     padding: 8px;
-    font-size: 13px;
+    font-size: 10px;
   }
 
   .price-panel table {
-    font-size: 5px;
+    font-size: 10px;
   }
 
   .price-panel td {
