@@ -179,19 +179,6 @@ body {
     background-color: #f0d6d6 !important;
   }
 
-  .question-box {
-    padding: 6px;
-    margin-bottom: 0px;
-  }
-
-  .question-box h1 {
-    font-size: 22px;
-  }
-
-  .question-box h2 {
-    font-size: 18px;
-  }
-
   #question {
     font-size: 13px !important;
   }
@@ -241,15 +228,15 @@ body {
   }
 
   .question-box {
-  background-color: #fff0f5;
-  border-radius: 11px;
-  padding: 15px;
-  margin-bottom: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
- }
+    padding: 6px;
+    margin-bottom: 0px;
+  }
 
   .question-box h1 {
-    font-size: 15px;
-    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .question-box h2 {
+    font-size: 18px;
   }
 }
