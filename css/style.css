@@ -199,4 +199,8 @@ body {
   .option p {
     font-size: 16px;
   }
+
+  body {
+    background-color: #cf2626 !important;
+  }
 }
