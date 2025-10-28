@@ -180,8 +180,8 @@ body {
   }
 
   .question-box {
-    padding: 12px;
-    margin-bottom: 12px;
+    padding: 9px;
+    margin-bottom: 9px;
   }
 
   .question-box h1 {
@@ -201,12 +201,19 @@ body {
   }
 
   .option {
-    width: 100px !important;
-    height: 120px !important;
+    width: 55px;
+    height: 70px;
+    padding: 4px;
+    border-width: 2px;
   }
 
   .option img {
-    width: 80px !important;
+    width: 45px;
+    margin-bottom: 4px;
+  }
+
+  .option p {
+    font-size: 9px;
   }
 
   #startButton,
@@ -218,7 +225,7 @@ body {
   .price-panel {
     max-width: 220px;
     padding: 8px;
-    font-size: 9px;
+    font-size: 11px;
   }
 
   .price-panel table {
