@@ -174,33 +174,31 @@ body {
   }
 }
 
-@media (max-width: 400px) {
-  .question-box h1 {
-    font-size: 24px;
+@media screen and (max-width: 400px) {
+  body {
+    background-color: #e45757 !important;
   }
 
-  .question-box h2 {
-    font-size: 20px;
+  #question {
+    font-size: 26px !important;
   }
 
   #response {
-    font-size: 18px;
+    font-size: 22px !important;
   }
 
   .option {
-    width: 100px;
-    height: 120px;
+    width: 100px !important;
+    height: 120px !important;
   }
 
   .option img {
-    width: 80px;
+    width: 80px !important;
   }
 
-  .option p {
-    font-size: 16px;
-  }
-
-  body {
-    background-color: #cf2626 !important;
+  #startButton,
+  #nextButton {
+    font-size: 18px !important;
+    padding: 10px 20px !important;
   }
 }
