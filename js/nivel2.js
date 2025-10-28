@@ -20,6 +20,7 @@ const question = document.getElementById("question");
 const startButton = document.getElementById("startButton");
 const soundCorrect = document.getElementById("soundCorrect");
 const soundWrong = document.getElementById("soundWrong");
+const nextButton = document.getElementById("nextButton");
 
 let currentRound = 0;
 const maxRounds = 5;
@@ -81,7 +82,7 @@ items.forEach(item => {
     soundWrong.currentTime = 0;
     soundWrong.play();
    }
-   setTimeout(nextQuestion, 5000);
+   nextButton.style.display = "inline-block";
 };
   container.appendChild(div);
 });
@@ -96,4 +97,10 @@ startButton.onclick = () => {
   questionPrices = shuffleArray(uniquePrices).slice(0, maxRounds);
 
   nextQuestion();
+
+nextButton.onclick = () => {
+  nextButton.style.display = "none";
+  nextQuestion();
+};
+
 };

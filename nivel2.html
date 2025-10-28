@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="question-box">
-    <h1>🧠 Level 2</h1>
+    <h1>🧠 Fase 2</h1>
     <h2 id="question">How much is the ___?</h2>
     <div id="response"></div>
   </div>
@@ -26,7 +26,10 @@
 
   <button id="startButton">▶️ Iniciar</button>
 
-  <div class="card-row" id="options"></div>
+  <div class="card-area">
+    <div class="card-row" id="options"></div>
+    <button id="nextButton" style="display:none;">➡️ Próxima pergunta</button>
+  </div>
 
   <audio id="soundCorrect" src="sounds/match.mp3"></audio>
   <audio id="soundWrong" src="sounds/wrong.mp3"></audio>

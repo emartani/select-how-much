@@ -41,7 +41,7 @@ function translateNameToPortuguese(name) {
 }
 
 // Função para falar em inglês e português
-function speakDualLanguage(englishText, portugueseText) {
+function speakDualLanguage(englishText, portugueseText, onComplete) {
   const voices = speechSynthesis.getVoices();
 
   const englishVoice = voices.find(v => v.name === "Microsoft Zira") || voices.find(v => v.lang === "en-US");
@@ -55,10 +55,17 @@ function speakDualLanguage(englishText, portugueseText) {
   utterPt.voice = portugueseVoice;
   utterPt.lang = 'pt-BR';
 
+  utterPt.onend = () => {
+    if (typeof onComplete === "function") {
+      onComplete();
+    }
+  };
+
   speechSynthesis.cancel();
   speechSynthesis.speak(utterEn);
   speechSynthesis.speak(utterPt);
 }
+
 
 // Criação dos cards
 items.forEach(item => {
@@ -77,7 +84,7 @@ items.forEach(item => {
      response.textContent += " 🎉 Nível 1 completo!";
      setTimeout(() => {
       window.location.href = "nivel2.html";
-     }, 3000); // espera 3 segundos antes de ir para o nível 2
+     }, 5000); // espera 3 segundos antes de ir para o nível 2
     }
   };
   container.appendChild(div);

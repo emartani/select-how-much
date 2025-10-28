@@ -64,6 +64,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 12px;
+  margin-bottom: 20px;
+}
+
+.card-area {
+  margin-bottom: 60px; /* espaço entre cards/botão e o que vier abaixo */
 }
 
 .option {
@@ -77,6 +82,7 @@ body {
   cursor: pointer;
   transition: transform 0.2s;
   text-align: center;
+  margin-bottom: 10px;
 
   /* Centralização vertical */
   display: flex;
@@ -153,3 +159,23 @@ body {
     width: 70px;
   }
 }
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+#startButton,
+#nextButton {
+  font-size: 18px;
+  padding: 10px 20px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  animation: pulse 1.5s infinite;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.6);
+}
+
