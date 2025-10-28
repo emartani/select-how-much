@@ -176,11 +176,11 @@ body {
 
 @media screen and (max-width: 400px) {
   body {
-    background-color: #e45757 !important;
+    background-color: #f0d6d6 !important;
   }
 
   #question {
-    font-size: 26px !important;
+    font-size: 10px !important;
   }
 
   #response {
@@ -200,5 +200,12 @@ body {
   #nextButton {
     font-size: 18px !important;
     padding: 10px 20px !important;
+  }
+  .price-panel {
+    font-size: 10px;
+  }
+
+  .price-panel table {
+    font-size: 10px;
   }
 }
