@@ -180,11 +180,11 @@ body {
   }
 
   #question {
-    font-size: 10px !important;
+    font-size: 13px !important;
   }
 
   #response {
-    font-size: 22px !important;
+    font-size: 13px !important;
   }
 
   .option {
@@ -207,5 +207,18 @@ body {
 
   .price-panel table {
     font-size: 10px;
+  }
+
+  .question-box {
+  background-color: #fff0f5;
+  border-radius: 11px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+ }
+
+  .question-box h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 }
