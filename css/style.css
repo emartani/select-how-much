@@ -142,8 +142,12 @@ body {
 }
 
 @media (max-width: 400px) {
-  #question {
-    font-size: 22px;
+  .question-box h1 {
+    font-size: 24px;
+  }
+
+  .question-box h2 {
+    font-size: 20px;
   }
 
   #response {
@@ -151,14 +155,33 @@ body {
   }
 
   .option {
-    width: 90px;
-    height: 110px;
+    width: 100px;
+    height: 120px;
   }
 
   .option img {
-    width: 70px;
+    width: 80px;
+  }
+
+  .option p {
+    font-size: 16px;
+  }
+
+  #startButton,
+  #nextButton {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  .price-panel {
+    font-size: 16px;
+  }
+
+  .price-panel table {
+    font-size: 15px;
   }
 }
+
 
 @keyframes pulse {
   0% { transform: scale(1); }
