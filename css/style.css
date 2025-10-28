@@ -179,6 +179,19 @@ body {
     background-color: #f0d6d6 !important;
   }
 
+  .question-box {
+    padding: 12px;
+    margin-bottom: 12px;
+  }
+
+  .question-box h1 {
+    font-size: 22px;
+  }
+
+  .question-box h2 {
+    font-size: 18px;
+  }
+
   #question {
     font-size: 13px !important;
   }
@@ -201,12 +214,23 @@ body {
     font-size: 18px !important;
     padding: 10px 20px !important;
   }
+  
   .price-panel {
-    font-size: 10px;
+    max-width: 220px;
+    padding: 8px;
+    font-size: 9px;
   }
 
   .price-panel table {
-    font-size: 10px;
+    font-size: 7px;
+  }
+
+  .price-panel td {
+    padding: 3px 5px;
+  }
+
+  .price-panel h3 {
+    font-size: 16px;
   }
 
   .question-box {
