@@ -213,6 +213,7 @@ body {
     max-width: 220px;
     padding: 8px;
     font-size: 10px;
+    margin-bottom: 5px;
   }
 
   .price-panel table {
