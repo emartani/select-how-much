@@ -67,25 +67,29 @@ function speakDualLanguage(englishText, portugueseText, onComplete) {
 }
 
 
+
 // Criação dos cards
 items.forEach(item => {
   const div = document.createElement("div");
   div.className = "option";
   div.innerHTML = `<img src="${item.img}" alt="${item.name}"><p>${item.name}</p>`;
   div.onclick = () => {
-    const phraseEn = `How much is the ${item.name}? It’s ${item.price}.`;
-    const translatedName = translations[item.name] || item.name;
-    const phrasePt = `Quanto custa ${translatedName}? É ${item.price}.`;
-    response.textContent = phraseEn + " / " + phrasePt;
-    speakDualLanguage(phraseEn, phrasePt);
-    
-    currentRound++;
+  const phraseEn = `How much is the ${item.name}? It’s ${item.price}.`;
+  const translatedName = translations[item.name] || item.name;
+  const phrasePt = `Quanto custa ${translatedName}? É ${item.price}.`;
+  response.textContent = phraseEn + " / " + phrasePt;
+
+  currentRound++;
+
+  speakDualLanguage(phraseEn, phrasePt, () => {
     if (currentRound >= maxRounds) {
-     response.textContent += " 🎉 Nível 1 completo!";
-     setTimeout(() => {
-      window.location.href = "nivel2.html";
-     }, 5000); // espera 3 segundos antes de ir para o nível 2
+      response.textContent += " 🎉 Nível 1 completo!";
+      setTimeout(() => {
+        window.location.href = "nivel2.html";
+      }, 1000); // pequeno atraso após a fala terminar
     }
-  };
+  });
+};
+
   container.appendChild(div);
 });
