@@ -181,7 +181,7 @@ body {
 
   .question-box {
     padding: 9px;
-    margin-bottom: 9px;
+    margin-bottom: 4px;
   }
 
   .question-box h1 {
@@ -213,7 +213,7 @@ body {
   }
 
   .option p {
-    font-size: 9px;
+    font-size: 11px;
   }
 
   #startButton,
@@ -225,11 +225,11 @@ body {
   .price-panel {
     max-width: 220px;
     padding: 8px;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .price-panel table {
-    font-size: 7px;
+    font-size: 5px;
   }
 
   .price-panel td {
@@ -237,7 +237,7 @@ body {
   }
 
   .price-panel h3 {
-    font-size: 16px;
+    font-size: 13px;
   }
 
   .question-box {
